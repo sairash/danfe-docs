@@ -1,0 +1,20 @@
+#region function
+# First Function
+function greet_me(name){
+
+    # Nested Function
+    function greet(){
+        return "Hello from, "
+    }
+    return greet() + name
+}
+
+println(greet_me("Danfe"))
+#endregion function
+
+"
+#region output
+# Output
+Hello from, Danfe
+#endregion output
+"

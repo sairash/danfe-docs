@@ -1,0 +1,6 @@
+#region del
+x = 10
+dekhauln("Value of x: ", x)
+hatau x
+dekhauln("Value of x: ", x)
+#endregion del

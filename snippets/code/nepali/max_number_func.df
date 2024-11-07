@@ -1,0 +1,16 @@
+#region max
+karya max(num1, num2) {
+
+    yedi num1 > num2 {
+        result = num1; 
+    } natra {
+        result = num2;
+    }
+
+    pathau result; # variable defined and returned dynamically
+}
+#endregion max
+
+# Calling Function
+dekhauln("The maximum of the two numbers is ",max(10,4))
+dekhauln("The maximum of the two numbers is ",max(5,6))

@@ -1,0 +1,16 @@
+#region del
+x = 10
+println("Value of x: ", x)
+del x
+println("Value of x: ", x)
+#endregion del
+
+"
+#region output
+# Output
+Value of x: 10
+Value of x: 
+Error Encountered when eval -> identifier: 
+:0:0: **undefined**: x
+#endregion output
+"

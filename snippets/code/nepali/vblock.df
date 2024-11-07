@@ -1,0 +1,22 @@
+# region vblock
+samaya = v {
+    // V code goes here
+    import time
+    return(time.now()) 
+} endv
+
+function get_current_time_nano(){
+    pathau v {
+        import time
+        return(time.now().unix_nano()) 
+    } endv
+}
+
+samaya_in_int = get_current_time_nano()
+
+# endregion vblock
+
+# region print
+dekhauln("%i{time} ", prakar(samaya))
+dekhauln("%i{time_in_int} ", prakar(samaya_in_int))
+# endregion print

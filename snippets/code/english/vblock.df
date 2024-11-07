@@ -1,0 +1,31 @@
+# region vblock
+time = v {
+    // V code goes here
+    import time
+    return(time.now()) 
+} endv
+
+function get_current_time_nano(){
+    return v {
+        import time
+        return(time.now().unix_nano()) 
+    } endv
+}
+
+
+time_in_int = get_current_time_nano()
+
+# endregion vblock
+
+# region print
+println("%i{time} ", typeof(time))
+println("%i{time_in_int} ", typeof(time_in_int))
+# endregion print
+
+"
+# region output
+# Output
+2024-11-05 08:29:45 string
+1730795410413653603 int
+# endregion output
+"

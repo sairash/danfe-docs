@@ -1,0 +1,44 @@
+#region array
+# Pushing a value to array
+arr = ["Hello"]
+arr << "from"
+arr << ["Danfe", "and"]
+arr[2] << "Sairash"
+
+println("%i{arr}, ", typeof(arr))
+
+
+# Poping the last value from array
+println(arr >>) 
+println(arr)
+#endregion array
+
+#region array_output
+# Output
+
+[Hello, from, [Danfe, and, Sairash]], array
+[Danfe, and, Sairash]
+[Hello, from]
+#endregion array_output
+
+#region table
+table = ["value"=> ["Pusing"]]
+table["value"] << "in"
+
+# Radom key string of 10 characters is generated
+table << ["Table ."]
+table << 10
+
+# Poped value is stored in x
+x = table >>
+println(x * 4)
+
+println("%i{table}, ", typeof(table))
+#endregion table
+
+#region table_output
+# Output
+
+40
+[value => [Pusing, in], 0{9zS;:4hzGWcp => [Table .]], table
+#endregion table_output
