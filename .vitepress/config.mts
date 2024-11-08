@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import {createHighlighter} from 'shiki'
 import fs from 'fs'
+import timeline from "vitepress-markdown-timeline";
 
 // Just Added some new keywords to coffeescript 
 const danfeLang = JSON.parse(fs.readFileSync('./assets/danfe.json', 'utf8'))
@@ -25,6 +26,7 @@ export default defineConfig({
           theme: 'github-dark-high-contrast'
         })
       }
+      md.use(timeline);
     },
   },
   outDir: 'dist',
@@ -47,6 +49,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'About', link: '/about' },
+          { text: 'RoadMap', link: '/RoadMap' },
           { text: 'Installing', link: '/install' }
         ]
       },
