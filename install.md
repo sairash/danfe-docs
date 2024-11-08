@@ -11,21 +11,21 @@ There are multiple ways to download and install Danfe
 
 ## Directly from terminal
 
-::: details Info {open}
-As of now **mac oS** is not supported using this method go to `build from source` section to install `danfe`.
-:::
+### Linux & Mac OS
 
-::: code-group
-``` sh [Linux]
+You can use wget
+``` sh 
 wget -qO- https://gist.github.com/sairash/c51cfd6654807ea5bf9eb6e2119b067a/raw/install_danfe.sh| bash
-# or 
+```
+**or curl**
+``` sh
 curl -sSL https://gist.github.com/sairash/c51cfd6654807ea5bf9eb6e2119b067a/raw/install_danfe.sh | bash
 ```
 
-``` sh [Windows]
-# coming soon
-```
-:::
+### Windows
+
+You can download the `.exe` using the link bellow. Install it and open a new terminal then type `danfe`. Now, you should be able to use [Danfe Repl](./repl.md). <br> <br>
+[Download danfe.exe here](https://github.com/sairash/danfe-v/releases/latest/download/danfe-windows-installer.exe)
 
 ## Build from source
 ### Install Vlang
