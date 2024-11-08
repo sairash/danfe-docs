@@ -10,5 +10,8 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
     "postbuild": "cp -R ./assets/. ./dist/assets/"
+  },
+  "dependencies": {
+    "vitepress-markdown-timeline": "^1.2.1"
   }
 }
