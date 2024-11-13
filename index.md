@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Danfe Programming Language"
   tagline: "Danfe - Dynamic Assembler for Native Function Engine"
-  image: "/assets/df_rounded_more.png"
+  image: "https://utfs.io/f/Jk6mQ2VBlE6tJvy6SfVBlE6tumDzfiKX2RrbsTLOPYUd4IV8"
   actions:
     - theme: brand
       text:  Documentations
