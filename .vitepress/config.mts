@@ -30,6 +30,8 @@ export default defineConfig({
     },
   },
   outDir: 'dist',
+
+  cleanUrls: true,
   // markdown: {
   //   
   // },
@@ -40,7 +42,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Documentations', link: '/about' }
+      { text: 'Documentations', link: '/about' },
+      { text: 'Examples', link: '/examples/' },
     ],
 
     sidebar: [
@@ -50,7 +53,7 @@ export default defineConfig({
         items: [
           { text: 'About', link: '/about' },
           { text: 'RoadMap', link: '/RoadMap' },
-          { text: 'Installing', link: '/install' }
+          { text: 'Installing', link: '/install' },
         ]
       },
       {
