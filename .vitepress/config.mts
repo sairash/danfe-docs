@@ -73,6 +73,7 @@ export default defineConfig({
         items: [
           { text: 'Comments', link: '/comments' },
           { text: 'Variables', link: '/variables' },
+          { text: ' Magic Methods', link: '/magic_methods' },
           { text: 'Del', link: '/del' },
           { text: 'Danfe Types', link: '/danfe-types' },
           { text: 'Run V Code', link: '/vblock' },
@@ -95,6 +96,8 @@ export default defineConfig({
           { text: 'Int', link: '/built-in-functions#int-float-string' },
           { text: 'Float', link: '/built-in-functions#int-float-string' },
           { text: 'String', link: '/built-in-functions#int-float-string' },
+          { text: 'Chr', link: '/built-in-functions#chr' },
+          { text: 'Table', link: '/built-in-functions#table' },
           { text: 'Testing', link: '/built-in-functions#testing' },
           { text: 'Panic', link: '/built-in-functions#panic' },
           { text: 'Random', link: '/built-in-functions#random-generator' },
