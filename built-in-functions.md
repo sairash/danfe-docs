@@ -89,6 +89,46 @@ dekhauln(prakar(a), ", ", prakar(b), ", ", prakar(c), ", ", prakar(d))
 # Output
 int, float, string, int
 ```
+
+## Chr
+This function converts the given `int` into a ascii equivalent string and `string` into it's ascii number
+
+``` danfe
+x = 67
+println(chr(x))
+println(chr("A"))
+```
+
+``` md
+# Output
+C
+65
+```
+
+## Table
+This function converts a given string to array or table.
+
+Example conversion of **string** to **array** :
+``` danfe
+array_value = "[10, 20, 30]"
+println(typeof(array_value), " ", table(array_value), " ", typeof(table(array_value)))
+```
+
+``` md
+string [10, 20, 30] array
+```
+
+Example conversion of **string** to **table** :
+``` danfe
+array_value = "['x'=>10,'y'=>20,'z'=>30]"
+println(typeof(array_value), " ", table(array_value), " ", typeof(table(array_value)))
+```
+
+``` md
+string [x => 10, y => 20, z => 30] table
+```
+
+
 ## Testing 
 You can write test cases for with Danfe: which will run only when you add the `-t` flag. 
 
