@@ -8,6 +8,8 @@
 | [`int`](./built-in-functions.md#int-float-string)      | int(identifier)                                                    | converts the given argument into an int type                      |
 | [`float`](./built-in-functions.md#int-float-string)    | float(identifier)                                                  | converts the given argument into an float type                    |
 | [`string`](./built-in-functions.md#int-float-string)   | string(identifer)                                                  | converts the given argument into an string type                   |
+|[`chr`](./built-in-functions.md#chr)| chr(identifier)| converts the given int into a ascii equivalent string and string into it's ascii number|
+|[`table`](./built-in-functions.md#table)| table(identifier)| converts the given string into a table|
 | [`assert`](./built-in-functions.md#testing)            | assert("type", "test_name", "test_case_1", "test_case_2 optional") | Tests that the program is doing exactly what it's supposed to do. |
 | [`panic`](./built-in-functions.md#panic)               | panic("manually throw an error")                                   | can manually throw an error                                       |
 | [`rand_int`](./built-in-functions.md#random-generator) | rand_int()                                                         | generates a random i64 number                                     |
