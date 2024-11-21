@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Danfe Programming Language"
-  tagline: "Danfe - Dynamic Assembler for Native Function Engine"
+  tagline: "Danfe Not Danphe"
   image: "https://utfs.io/f/Jk6mQ2VBlE6tJvy6SfVBlE6tumDzfiKX2RrbsTLOPYUd4IV8"
   actions:
     - theme: brand
@@ -55,3 +55,11 @@ Made with :heart: by:
 <br>
 
 Want to contribute? [Go here!](https://github.com/sairash/danfe-v)
+
+<style scope>
+.clip {
+  background: var(--vp-home-hero-name-background) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+</style>
