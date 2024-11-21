@@ -1,0 +1,130 @@
+{
+    "name": "danfe",
+    "displayName": "Danfe",
+    "alias": "df",
+    "fileTypes": [
+        ".df"
+    ],
+    "patterns": [
+        {
+            "include": "#controls"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#comment-block"
+        },
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#function"
+        },
+        {
+            "include": "#member"
+        },
+        {
+            "include": "#identifier"
+        },
+
+        {
+            "include": "#identifier"
+        },
+        {
+            "include": "#number"
+        },
+        {
+            "include": "#operator"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "begin": "\\#",
+            "end": "\\n",
+            "name": "comment.line.danfe",
+            "patterns": [
+                {}
+            ]
+        },
+        "controls": {
+            "patterns": [
+                {
+                    "match": "\\b(if|else|for|loop|ghum|todh|xod|pathau|break|continue|return|yedi|natra)\\b",
+                    "name": "keyword.control.danfe"
+                }
+            ]
+        },
+        "function": {
+            "patterns": [
+                {
+                    "match": "\\b([a-zA-Z_]\\w*(?=\\s*\\())",
+                    "name": "entity.name.function.danfe"
+                }
+            ]
+        },
+        "identifier": {
+            "patterns": [
+                {
+                    "match": "[a-zA-Z][a-zA-Z0-9_.]*",
+                    "name": "identifier.danfe"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "match": "\\b(in|break|continue|else|if|false|nil|v|loop|for|return|endv|thik|bethik|khali|del|hatau|null|sunna|function|import|karya|prayog|as|naam|__module__|__args__|print|println|input|assert|panic)\\b",
+                    "name": "keyword.danfe"
+                }
+            ]
+        },
+        "member": {
+            "patterns": [
+                {
+                    "captures": {
+                        "0": {
+                            "name": "entity.other.attribute-name.danfe"
+                        }
+                    },
+                    "match": "\\.([a-zA-Z_]\\w*)"
+                }
+            ]
+        },
+        "number": {
+            "patterns": [
+                {
+                    "match": "0x[a-fA-F0-9]+|\\d+|(\\d+\\.?|\\.\\d)\\d*([eE][+-]?\\d+)?",
+                    "name": "constant.numeric.danfe"
+                }
+            ]
+        },
+        "operator": {
+            "patterns": [
+                {
+                    "match":  "\\?|\\(|\\)|\\[|\\]|\\.|-|!|~|\\*|/|%|\\+|&|\\^|\\||<|>|=|:|\\?=",
+                    "name": "keyword.operator.danfe"
+                }
+            ]
+        },
+        "strings": {
+            "patterns": [
+                {
+                    "begin": "(\"|')",
+                    "end": "\\1",
+                    "name": "string.quoted.double.danfe",
+                    "patterns": [
+                        {
+                            "match": "(\\\\x[\\h]{2})|(\\\\[0-7]{3})|(\\\\\\\\)|(\\\\\")|(\\\\')|(\\\\a)|(\\\\b)|(\\\\f)|(\\\\n)|(\\\\r)|(\\\\t)|(\\\\v)",
+                            "name": "constant.character.escape.danfe"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "scopeName": "source.danfe"
+}

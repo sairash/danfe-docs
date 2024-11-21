@@ -4,7 +4,7 @@ import fs from 'fs'
 import timeline from "vitepress-markdown-timeline";
 
 // Just Added some new keywords to coffeescript 
-const danfeLang = JSON.parse(fs.readFileSync('./assets/danfe.json', 'utf8'))
+const danfeLang = JSON.parse(fs.readFileSync('./assets/danfe_new.json', 'utf8'))
 
 export default defineConfig({
   title: "Danfe",
