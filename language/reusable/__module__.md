@@ -1,7 +1,7 @@
 In Danfe the `file you run is the entry point to your program`. But there is a special keyword defined called `__module__` which is initialized at the start. By using that keyword you can check if the file is the entry point or not.
 
 ``` danfe
-if __module__ == "main" {
+if __module__ == 'main' {
     println("Hello World")
 }
 ```
