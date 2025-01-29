@@ -29,6 +29,9 @@ export default defineConfig({
       md.use(timeline);
     },
   },
+  sitemap: {
+    hostname: "https://danfe.sairashgautam.com.np",
+  },
   outDir: 'dist',
 
   cleanUrls: true,
